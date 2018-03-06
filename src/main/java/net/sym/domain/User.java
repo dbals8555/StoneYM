@@ -40,12 +40,18 @@ public class User {
 		this.email = newUser.email;
 	}
 
-	public String getPassword() {
-		return password;
+	public boolean matchId(Long newId) {
+		if(newId ==null) {
+			return false;
+		}
+		return newId.equals(id);
 	}
-
-	public Long getId() {
-		return id;
+	
+	public boolean matchPassword(String newPassword) {
+		if(newPassword == null) {
+			return false;
+		}
+		return newPassword.equals(password);
 	}
 
 
