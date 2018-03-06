@@ -6,7 +6,7 @@
 	<groupId>net.sym</groupId>
 	<artifactId>sym</artifactId>
 	<version>1.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>sym</name>
 	<description>SYM study</description>
