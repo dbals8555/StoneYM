@@ -42,7 +42,7 @@ public class QuestionController {
 		User sessionUser = HttpSessionUtils.getUserFromSession(session);
 		Question newQuestion = new Question(sessionUser, title, contents);
 		questionRepository.save(newQuestion);
-		return "redirect:";
+		return "redirect:/";
 	}
 
 	@GetMapping("/{id}")
